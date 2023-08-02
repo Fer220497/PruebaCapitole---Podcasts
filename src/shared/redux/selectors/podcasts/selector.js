@@ -1,0 +1,1 @@
+export const selectPodcast = (state) => state?.podcastReducer?.podcastData;
