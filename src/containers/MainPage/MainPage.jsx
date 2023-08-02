@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import './MainPage.css';
 import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect } from 'react-redux';
@@ -7,6 +7,7 @@ import { selectPodcast } from '../../shared/redux/selectors/podcasts/selector'
 import PropTypes from 'prop-types'
 
 import { shallowEqual, useSelector } from 'react-redux';
+import CardPodcast from '../../components/CardPodcast/CardPodcast';
 
 const MainPage = ({ initGetAllDataPodcast }) => {
 
@@ -15,16 +16,41 @@ const MainPage = ({ initGetAllDataPodcast }) => {
   }, [])
 
   const listItem = useSelector(selectPodcast, shallowEqual);
+  const [filter, setFilter] = useState('');
 
-  console.log({ listItem })
+
+  // Function to update the filter value when the input changes
+  const handleInputChange = (event) => {
+    setFilter(event.target.value);
+  };
+
+  // Function to filter the items based on the current filter value
+  const filteredItems = useMemo(() => {
+    const itemFilteredByTitle = listItem.filter((item) => item?.title?.label?.toLowerCase().includes(filter?.toLowerCase()));
+    const itemFilteredByAuthor = listItem.filter((item) => item?.artist?.label?.toLowerCase().includes(filter?.toLowerCase()));
+    const listWithDuplicates = [...new Set([...itemFilteredByTitle, ...itemFilteredByAuthor])];
+    console.log({ listWithDuplicates })
+    return Array.from(listWithDuplicates);
+
+  }, [filter, listItem]);
   return (
     <>
       <h1>Main Page</h1>
+      <div className='w-full flex justify-end'>
+        <div className='border-2 rounded-lg bg-blue-500 p-1 text-white text-2sm font-bold inline-block'>{filteredItems?.length}</div>
+        <input
+          type="text"
+          value={filter}
+          onChange={handleInputChange}
+          placeholder="Filter podcasts..."
+          className='bg-gray-50 border border-gray-300 text-gray-900 text-sm'
+        />
+      </div>
       <>
-        <div>
-          {listItem?.feed?.entry?.map((podcast) => {
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
+          {filteredItems?.map((podcast) => {
             return (
-              <div key={podcast?.id.attributes?.["im:id"]}>{podcast?.["im:name"]?.label}</div>
+              <CardPodcast key={podcast?.id.attributes?.id} podcast={podcast}></CardPodcast>
             )
           }
           )}
