@@ -7,14 +7,17 @@ import {
 } from "react-router-dom";
 import MainPage from '../containers/MainPage/MainPage';
 import Header from '../components/Header/Header'
+import PodcastPage from '../containers/PodcastPage/PodcastPage';
 
 function App() {
     return (<>
 
-        <Header />
+
         <BrowserRouter>
+            <Header />
             <Routes>
                 <Route path="/" element={<MainPage />} />
+                <Route path="/podcast/:id" element={<PodcastPage />} />
             </Routes>
         </BrowserRouter>
     </>
