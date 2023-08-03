@@ -8,17 +8,18 @@ import PropTypes from 'prop-types'
 
 import { shallowEqual, useSelector } from 'react-redux';
 import CardPodcast from '../../components/CardPodcast/CardPodcast';
+import SearchBarWithCounter from '../../components/SearchBarWithCounter/SearchBarWithCounter';
 
 const MainPage = ({ initGetAllDataPodcast }) => {
 
-  useEffect(() => {
-    initGetAllDataPodcast();
-  }, [])
+
 
   const listItem = useSelector(selectPodcast, shallowEqual);
   const [filter, setFilter] = useState('');
 
-
+  useEffect(() => {
+    initGetAllDataPodcast();
+  }, [])
   // Function to update the filter value when the input changes
   const handleInputChange = (event) => {
     setFilter(event.target.value);
@@ -29,28 +30,19 @@ const MainPage = ({ initGetAllDataPodcast }) => {
     const itemFilteredByTitle = listItem.filter((item) => item?.title?.label?.toLowerCase().includes(filter?.toLowerCase()));
     const itemFilteredByAuthor = listItem.filter((item) => item?.artist?.label?.toLowerCase().includes(filter?.toLowerCase()));
     const listWithDuplicates = [...new Set([...itemFilteredByTitle, ...itemFilteredByAuthor])];
-    console.log({ listWithDuplicates })
     return Array.from(listWithDuplicates);
-
   }, [filter, listItem]);
+
+
+
   return (
     <>
-      <h1>Main Page</h1>
-      <div className='w-full flex justify-end'>
-        <div className='border-2 rounded-lg bg-blue-500 p-1 text-white text-2sm font-bold inline-block'>{filteredItems?.length}</div>
-        <input
-          type="text"
-          value={filter}
-          onChange={handleInputChange}
-          placeholder="Filter podcasts..."
-          className='bg-gray-50 border border-gray-300 text-gray-900 text-sm'
-        />
-      </div>
+      <SearchBarWithCounter items={filteredItems} handleOnChange={handleInputChange} filter={filter} />
       <>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
+        <div className="grid md:grid-cols-4 gap-4 container mx-auto">
           {filteredItems?.map((podcast) => {
             return (
-              <CardPodcast key={podcast?.id.attributes?.id} podcast={podcast}></CardPodcast>
+              <CardPodcast key={podcast?.id.attributes?.id} podcast={podcast} ></CardPodcast>
             )
           }
           )}
