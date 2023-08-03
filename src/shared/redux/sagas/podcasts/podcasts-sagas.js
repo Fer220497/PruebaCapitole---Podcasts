@@ -35,7 +35,7 @@ export function getPodcast() {
 
 export function* getAllPodcastSaga() {
     try {
-        const cachedData = window.cachedData;
+        const cachedData = JSON.parse(localStorage.getItem('podcastData'));
         if (cachedData) {
             console.log('getFromCache')
             yield put(actions.getAllDataPodcastSuccess(cachedData))
@@ -44,8 +44,9 @@ export function* getAllPodcastSaga() {
             const data = response.data.feed.entry;
             const dataBuilded = dataBuilder(data);
             console.log({ dataBuilded })
-            window.cachedData = dataBuilded;
             console.log('getFromAxios')
+            localStorage.setItem('podcastData', JSON.stringify(dataBuilded));
+
             yield put(actions.getAllDataPodcastSuccess(dataBuilded))
         }
     } catch (error) {
