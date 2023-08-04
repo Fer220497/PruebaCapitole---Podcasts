@@ -2,9 +2,10 @@ import * as podcastActionTypes from "../../actions/podcasts/podcasts-types";
 
 const initialState = {
     podcastList: [],
-    podcastDetails: [],
+    podcastDetails: {},
     episodesList: [],
-    episodesLoading: []
+    episodesLoading: {},
+    episodeDetails: {}
 }
 
 export const reducer = (state = initialState, action = {}) => {
@@ -44,6 +45,16 @@ export const reducer = (state = initialState, action = {}) => {
             }
             return newState
         case podcastActionTypes.GET_PODCAST_EPISODES_ERROR:
+            console.error(action.error)
+            return newState;
+
+        case podcastActionTypes.GET_EPISODE_DETAILS_SUCCESS:
+            newState = {
+                ...state,
+                episodeDetails: action?.payload
+            }
+            return newState
+        case podcastActionTypes.GET_EPISODE_DETAILS_ERROR:
             console.error(action.error)
             return newState;
         default:

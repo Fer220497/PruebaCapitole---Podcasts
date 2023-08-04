@@ -18,6 +18,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/podcast/:idPodcast" element={<PodcastPage />} />
+                <Route path="/podcast/:idPodcast/episode/:idEpisode" element={<EpisodePage />} />
             </Routes>
         </BrowserRouter>
     </>

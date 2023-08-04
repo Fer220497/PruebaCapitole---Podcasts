@@ -6,7 +6,9 @@ import {
     initGetPodcastDetailsSaga,
     getPodcastDetailsSaga,
     initGetPodcastEpisodesSaga,
-    getPodcastEpisodesSaga
+    getPodcastEpisodesSaga,
+    initGetEpisodeDetailsSaga,
+    getEpisodeDetailsSaga
 } from '../../sagas/podcasts/podcasts-sagas'
 
 export function* watchPodcasts() {
@@ -16,6 +18,8 @@ export function* watchPodcasts() {
         takeLatest(actionTypes.INIT_GET_PODCAST_DETAILS, initGetPodcastDetailsSaga),
         takeLatest(actionTypes.GET_PODCAST_DETAILS, getPodcastDetailsSaga),
         takeLatest(actionTypes.INIT_GET_PODCAST_EPISODES, initGetPodcastEpisodesSaga),
-        takeLatest(actionTypes.GET_PODCAST_EPISODES, getPodcastEpisodesSaga)
+        takeLatest(actionTypes.GET_PODCAST_EPISODES, getPodcastEpisodesSaga),
+        takeLatest(actionTypes.INIT_GET_EPISODE_DETAILS, initGetEpisodeDetailsSaga),
+        takeLatest(actionTypes.GET_EPISODE_DETAILS, getEpisodeDetailsSaga),
     ])
 }

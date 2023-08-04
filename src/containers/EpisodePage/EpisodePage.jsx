@@ -4,7 +4,7 @@ import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, useSelector, shallowEqual } from 'react-redux';
 import * as podcastsActions from '../../shared/redux/actions/podcasts/podcasts-actions';
 import PropTypes from 'prop-types'
-import { podcastDetailsSelector, podcastEpisodesSelector } from '../../shared/redux/selectors/podcasts/selector'
+import { podcastDetailsSelector } from '../../shared/redux/selectors/podcasts/selector'
 import { useParams } from "react-router-dom";
 import PodcastDetails from '../../components/PodcastDetails/PodcastDetails';
 import EpisodeDetails from '../../components/EpisodeDetails/EpisodeDetails'
@@ -12,18 +12,14 @@ const EpisodePage = ({ initGetPodcastDetails, initGetPodcastEpisodes }) => {
 
 
     const { idPodcast } = useParams()
-    console.log({ idPodcast })
 
     const podcastDetails = useSelector(podcastDetailsSelector, shallowEqual);
-    const podcastEpisodes = useSelector(podcastEpisodesSelector, shallowEqual);
 
     useEffect(() => {
         initGetPodcastDetails(idPodcast)
         initGetPodcastEpisodes(idPodcast);
     }, [idPodcast])
 
-    console.log({ podcastDetails })
-    console.log({ podcastEpisodes })
     useEffect(() => {
         return;
     }, []);
@@ -31,7 +27,7 @@ const EpisodePage = ({ initGetPodcastDetails, initGetPodcastEpisodes }) => {
     return (
         <>
             <div className="flex py-10">
-                <PodcastDetails podcastDetails={podcastDetails} />
+                <PodcastDetails podcastDetails={podcastDetails} idPodcast={idPodcast} />
                 <EpisodeDetails />
             </div>
         </>

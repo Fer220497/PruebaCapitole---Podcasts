@@ -15,7 +15,6 @@ const TableEpisodes = ({ podcastEpisodes }) => {
 
     const episeodesLoading = useSelector(podcastEpisodesLoading, shallowEqual);
     const handleOnClick = (episode) => {
-        console.log({ episode })
         const route = `/podcast/${idPodcast}/episode/${episode?.trackId}`
         navigate(route);
     }
@@ -80,7 +79,7 @@ TableEpisodes.defaultProps = {
 }
 
 TableEpisodes.propTypes = {
-    podcastEpisodes: PropTypes.object.isRequired,
+    podcastEpisodes: PropTypes.array.isRequired
 
 }
 export default connect(mapStateToProps, mapDispatchToProps)(TableEpisodes)

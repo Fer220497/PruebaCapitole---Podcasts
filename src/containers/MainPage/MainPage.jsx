@@ -34,7 +34,6 @@ const MainPage = ({ initGetAllDataPodcast }) => {
   }, [filter, listItem]);
 
 
-  console.log({ filteredItems })
   return (
     <>
       <SearchBarWithCounter items={filteredItems} handleOnChange={handleInputChange} filter={filter} />

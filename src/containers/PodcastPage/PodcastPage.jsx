@@ -13,7 +13,6 @@ const PodcastPage = ({ initGetPodcastDetails, initGetPodcastEpisodes }) => {
 
 
   const { idPodcast } = useParams()
-  console.log({ idPodcast })
 
   const podcastDetails = useSelector(podcastDetailsSelector, shallowEqual);
   const podcastEpisodes = useSelector(podcastEpisodesSelector, shallowEqual);
@@ -23,8 +22,6 @@ const PodcastPage = ({ initGetPodcastDetails, initGetPodcastEpisodes }) => {
     initGetPodcastEpisodes(idPodcast);
   }, [idPodcast])
 
-  console.log({ podcastDetails })
-  console.log({ podcastEpisodes })
   useEffect(() => {
     return;
   }, []);

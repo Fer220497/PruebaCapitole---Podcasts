@@ -6,7 +6,6 @@ const urlAllPodcast = "https://itunes.apple.com/us/rss/toppodcasts/limit=100/gen
 
 export const dataBuilder = (data) => {
     const dataBuilded = data.map(element => {
-        console.log({ element })
         return {
             category: element?.category,
             id: element?.id,
@@ -78,8 +77,9 @@ export function* getPodcastEpisodesSaga(action) {
         } else {
 
             const data = yield call(fetchData, action);
-            localStorage.setItem(action.podcastId, JSON.stringify(data.results));
-            yield put(actions.getPodcastEpisodesSuccess(data.results));
+            const results = data?.results?.slice(1)
+            localStorage.setItem(action.podcastId, JSON.stringify(results));
+            yield put(actions.getPodcastEpisodesSuccess(results));
 
         }
     } catch (error) {
@@ -110,24 +110,27 @@ export function* getPodcastDetailsSaga(action) {
         yield put(actions.getPodcastDetailsError(error))
     }
 }
-/*
 
-console.log('action saga', action);
+export function* initGetEpisodeDetailsSaga(action) {
+    yield put(actions.getEpisodeDetails(action.episodeId, action.podcastId))
+}
+
+export function* getEpisodeDetailsSaga(action) {
     try {
-        const urlDetails = `https://itunes.apple.com/lookup?id=${action.podcastId}&media=podcast&entity=podcastEpisode&limit=20`;
-        console.log({ urlDetails })
-        const response = yield call(fetch, `https://api.allorigins.win/get?url=${urlDetails}`);
-        if (response.ok) {
-            const data = yield response.json();
-            console.log({ data })
-            const parsedData = JSON.parse(data?.contents);
-            console.log({ parsedData })
+        const cachedData = JSON.parse(localStorage.getItem(action.podcastId));
+        if (cachedData) {
+            const episodeDetail = cachedData.find((item) => item.trackId == action.episodeId)
 
-            yield put(actions.getPodcastDetailsSuccess(parsedData.results[0]));
+            yield put(actions.getEpisodeDetailsSuccess(episodeDetail))
         } else {
-            throw new Error('Network response was not ok.');
+            const response = yield call(get, urlAllPodcast)
+            const data = response.data.feed.entry;
+            const dataBuilded = dataBuilder(data);
+            const episodeDetail = dataBuilded.find((item) => item.trackId == action.episodeId)
+
+            yield put(actions.getEpisodeDetailsSuccess(episodeDetail));
         }
     } catch (error) {
-        yield put(actions.getPodcastDetailsError(error))
+        yield put(actions.getEpisodeDetailsError(error))
     }
-*/
+}

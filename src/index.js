@@ -21,9 +21,10 @@ const store = configureStore({
   preloadedState: {
     podcastReducer: {
       podcastList: [],
-      podcastDetails: [],
+      podcastDetails: {},
       episodesList: [],
-      episodesLoading: [],
+      episodesLoading: {},
+      episodeDetails: {}
     }
   }
 });

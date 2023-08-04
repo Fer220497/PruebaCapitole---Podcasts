@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="bg-white w-min cursor-pointer ">
+            <header className="bg-white w-min cursor-pointer p-2 ">
                 <div onClick={handleClickPodcast}>
                     <p className='text-xl text-blue-500 hover:text-blue-700 cursor-pointer'>Podcaster</p>
                 </div>

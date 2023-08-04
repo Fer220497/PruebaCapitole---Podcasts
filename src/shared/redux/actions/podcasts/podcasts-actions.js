@@ -83,3 +83,31 @@ export const getPodcastEpisodesError = (error) => {
     }
 }
 
+
+export const initGetEpisodeDetails = (episodeId, podcastId) => {
+    return {
+        type: podcastActionTypes.INIT_GET_EPISODE_DETAILS,
+        episodeId,
+        podcastId
+    }
+
+}
+export const getEpisodeDetails = (episodeId, podcastId) => {
+    return {
+        type: podcastActionTypes.GET_EPISODE_DETAILS,
+        episodeId, podcastId
+    }
+}
+
+export const getEpisodeDetailsSuccess = (payload) => {
+    return {
+        type: podcastActionTypes.GET_EPISODE_DETAILS_SUCCESS,
+        payload
+    }
+}
+export const getEpisodeDetailsError = (error) => {
+    return {
+        type: podcastActionTypes.GET_EPISODE_DETAILS_ERROR,
+        error
+    }
+}
