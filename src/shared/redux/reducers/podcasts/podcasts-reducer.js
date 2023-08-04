@@ -1,21 +1,49 @@
 import * as podcastActionTypes from "../../actions/podcasts/podcasts-types";
 
 const initialState = {
-    podcastData: []
+    podcastList: [],
+    podcastDetails: [],
+    episodesList: [],
+    episodesLoading: []
 }
 
 export const reducer = (state = initialState, action = {}) => {
-    console.log({ action })
     let newState = {};
     switch (action.type) {
         case podcastActionTypes.GET_ALL_PODCAST_DATA_SUCCESS:
-            console.log({ action })
             newState = {
                 ...state,
-                podcastData: action.data
+                podcastList: action.data
             }
             return newState
         case podcastActionTypes.GET_ALL_PODCAST_DATA_ERROR:
+            console.error(action.error)
+            return newState;
+        case podcastActionTypes.GET_PODCAST_DETAILS_SUCCESS:
+            newState = {
+                ...state,
+                podcastDetails: action?.payload
+            }
+            return newState
+        case podcastActionTypes.GET_PODCAST_DETAILS_ERROR:
+            console.error(action.error)
+            return newState;
+
+        case podcastActionTypes.INIT_GET_PODCAST_EPISODES:
+            newState = {
+                ...state,
+                episodesLoading: true,
+            }
+            return newState;
+        case podcastActionTypes.GET_PODCAST_EPISODES_SUCCESS:
+            newState = {
+                ...state,
+                episodesList: action.payload,
+                episodesLoading: false,
+
+            }
+            return newState
+        case podcastActionTypes.GET_PODCAST_EPISODES_ERROR:
             console.error(action.error)
             return newState;
         default:

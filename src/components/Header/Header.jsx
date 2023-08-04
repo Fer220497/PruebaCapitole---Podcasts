@@ -18,7 +18,7 @@ const Header = () => {
         <>
             <header className="bg-white w-min cursor-pointer ">
                 <div onClick={handleClickPodcast}>
-                    Podcaster
+                    <p className='text-xl text-blue-500 hover:text-blue-700 cursor-pointer'>Podcaster</p>
                 </div>
             </header>
         </>
@@ -28,7 +28,7 @@ const Header = () => {
 const mapStateToProps = (state) => {
     return {
         storeState: {
-            ...state.podcastData,
+            ...state.podcastList,
         }
     }
 }

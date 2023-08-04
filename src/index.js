@@ -20,7 +20,10 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleWare),
   preloadedState: {
     podcastReducer: {
-      podcastData: [],
+      podcastList: [],
+      podcastDetails: [],
+      episodesList: [],
+      episodesLoading: [],
     }
   }
 });

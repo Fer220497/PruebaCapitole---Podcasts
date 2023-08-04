@@ -27,7 +27,7 @@ const SearchBarWithCounter = ({ items, handleOnChange, filter }) => {
 const mapStateToProps = (state) => {
     return {
         storeState: {
-            ...state.podcastData,
+            ...state.podcastList,
         }
     }
 }

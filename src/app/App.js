@@ -8,7 +8,7 @@ import {
 import MainPage from '../containers/MainPage/MainPage';
 import Header from '../components/Header/Header'
 import PodcastPage from '../containers/PodcastPage/PodcastPage';
-
+import EpisodePage from '../containers/EpisodePage/EpisodePage'
 function App() {
     return (<>
 
@@ -17,7 +17,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<MainPage />} />
-                <Route path="/podcast/:id" element={<PodcastPage />} />
+                <Route path="/podcast/:idPodcast" element={<PodcastPage />} />
             </Routes>
         </BrowserRouter>
     </>

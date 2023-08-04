@@ -3,7 +3,7 @@ import './MainPage.css';
 import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect } from 'react-redux';
 import * as podcastsActions from '../../shared/redux/actions/podcasts/podcasts-actions';
-import { selectPodcast } from '../../shared/redux/selectors/podcasts/selector'
+import { allPodcastsDataSelector } from '../../shared/redux/selectors/podcasts/selector'
 import PropTypes from 'prop-types'
 
 import { shallowEqual, useSelector } from 'react-redux';
@@ -14,7 +14,7 @@ const MainPage = ({ initGetAllDataPodcast }) => {
 
 
 
-  const listItem = useSelector(selectPodcast, shallowEqual);
+  const listItem = useSelector(allPodcastsDataSelector, shallowEqual);
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const MainPage = ({ initGetAllDataPodcast }) => {
   }, [filter, listItem]);
 
 
-
+  console.log({ filteredItems })
   return (
     <>
       <SearchBarWithCounter items={filteredItems} handleOnChange={handleInputChange} filter={filter} />
@@ -57,7 +57,7 @@ const MainPage = ({ initGetAllDataPodcast }) => {
 const mapStateToProps = (state) => {
   return {
     storeState: {
-      ...state.podcastData,
+      ...state.podcastList,
     }
   }
 }
