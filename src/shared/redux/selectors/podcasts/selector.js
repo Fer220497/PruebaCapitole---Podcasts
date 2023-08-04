@@ -2,4 +2,5 @@ export const allPodcastsDataSelector = (state) => state?.podcastReducer?.podcast
 export const podcastDetailsSelector = (state) => state?.podcastReducer?.podcastDetails;
 export const podcastEpisodesSelector = (state) => state?.podcastReducer?.episodesList;
 export const podcastEpisodesLoading = (state) => state?.podcastReducer?.episodesLoading;
-export const episodeDetailsSelector = (state) => state?.podcastReducer?.episodeDetails
+export const episodeDetailsSelector = (state) => state?.podcastReducer?.episodeDetails;
+export const podcastLoadingSelector = (state) => state?.podcastReducer?.podcastLoading;

@@ -4,15 +4,19 @@ import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, useSelector, shallowEqual } from 'react-redux';
 import * as podcastsActions from '../../shared/redux/actions/podcasts/podcasts-actions';
 import PropTypes from 'prop-types'
-import { podcastDetailsSelector, podcastEpisodesSelector } from '../../shared/redux/selectors/podcasts/selector'
+import { podcastDetailsSelector, podcastEpisodesSelector, podcastLoadingSelector, podcastEpisodesLoading } from '../../shared/redux/selectors/podcasts/selector'
 import { useParams } from "react-router-dom";
 import PodcastDetails from '../../components/PodcastDetails/PodcastDetails';
 import TableEpisodes from '../../components/TableEpisodes/TableEpisodes'
+import Loader from '../../components/Loader/Loader';
 
 const PodcastPage = ({ initGetPodcastDetails, initGetPodcastEpisodes }) => {
 
 
   const { idPodcast } = useParams()
+
+  const episodeLoading = useSelector(podcastEpisodesLoading, shallowEqual);
+  const podcastLoading = useSelector(podcastLoadingSelector, shallowEqual);
 
   const podcastDetails = useSelector(podcastDetailsSelector, shallowEqual);
   const podcastEpisodes = useSelector(podcastEpisodesSelector, shallowEqual);
@@ -28,13 +32,21 @@ const PodcastPage = ({ initGetPodcastDetails, initGetPodcastEpisodes }) => {
 
   return (
     <>
-      <div className="flex py-10">
-        <PodcastDetails podcastDetails={podcastDetails} />
-        <TableEpisodes podcastEpisodes={podcastEpisodes} />
-      </div>
+      {(episodeLoading || podcastLoading) ? (
+        <>
+          <Loader></Loader>
+        </>
+      ) : (
+        <div className="flex py-10">
+          <PodcastDetails podcastDetails={podcastDetails} />
+          <TableEpisodes podcastEpisodes={podcastEpisodes} />
+        </div>
+
+      )}
     </>
   )
 }
+
 
 const mapStateToProps = (state) => {
   return {

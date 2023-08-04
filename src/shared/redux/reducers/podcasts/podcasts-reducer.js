@@ -4,8 +4,9 @@ const initialState = {
     podcastList: [],
     podcastDetails: {},
     episodesList: [],
-    episodesLoading: {},
-    episodeDetails: {}
+    episodesLoading: false,
+    episodeDetails: {},
+    podcastLoading: false
 }
 
 export const reducer = (state = initialState, action = {}) => {
@@ -20,9 +21,17 @@ export const reducer = (state = initialState, action = {}) => {
         case podcastActionTypes.GET_ALL_PODCAST_DATA_ERROR:
             console.error(action.error)
             return newState;
+        case podcastActionTypes.INIT_GET_PODCAST_DETAILS:
+            newState = {
+                ...state,
+                podcastLoading: true,
+                podcastDetails: action?.payload
+            }
+            return newState
         case podcastActionTypes.GET_PODCAST_DETAILS_SUCCESS:
             newState = {
                 ...state,
+                podcastLoading: false,
                 podcastDetails: action?.payload
             }
             return newState
