@@ -1,46 +1,34 @@
-# Getting Started with Create React App and Redux
+Comando disponibles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+### `npm install`
 
-## Available Scripts
+Para ejecutar la aplicación en modo "production" debemos situarnos en la raíz del proyecto (donde se encuentra el fichero package.json) y ejecutar la siguiente comando:
 
-In the project directory, you can run:
+### `npm run craco-start`
 
-### `npm start`
+Abrir [http://localhost:3000](http://localhost:3000) para ver en el navegador
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tambien veras errores de lint en la consola.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Puede lanzarse tambien usando el comando:
 
-### `npm test`
+### `npm run start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pero no podra buildear los elementos CSS de Tailwind, por lo tanto no es recomendable usarlo.
 
-### `npm run build`
+Para lanzar los tests debemos situarnos en la raíz del proyecto (donde se encuentra el fichero package.json) y ejecutar la siguiente comando:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm run test`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para ejecutar la aplicación en modo "production" debemos situarnos en la raíz del proyecto (donde se encuentra el fichero package.json) y ejecutar la siguiente comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run craco-build`
+### `serve -s build`
 
-### `npm run eject`
+Puede lanzarse tambien usando el comando:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `npm run buildReact`
+### `npm install -g serve`
+Pero no podra buildear los elementos CSS de Tailwind, por lo tanto no es recomendable usarlo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
