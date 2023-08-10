@@ -17,7 +17,7 @@ const TableEpisodes = ({ podcastEpisodes }) => {
     }
     return (
         <>
-            <div className=" bg-white rounded-lg shadow-md p-6 w-3/4">
+            <div className=" bg-white rounded-lg shadow-md p-6 w-3/4" data-testid="table-episodes">
                 <h2 className="text-2xl font-semibold mb-4">Episodes: {podcastEpisodes?.length}</h2>
                 <table className="w-full border-collapse  ">
                     <thead>

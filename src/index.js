@@ -24,7 +24,8 @@ const store = configureStore({
       podcastDetails: {},
       episodesList: [],
       episodesLoading: {},
-      episodeDetails: {}
+      episodeDetails: {},
+      podcastLoading: {},
     }
   }
 });

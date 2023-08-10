@@ -1,0 +1,73 @@
+{
+    "category": {
+        "attributes": {
+            "im:id": "1523",
+            "term": "Music Commentary",
+            "scheme": "https://podcasts.apple.com/us/genre/podcasts-music-music-commentary/id1523?uo=2",
+            "label": "Music Commentary"
+        }
+    },
+    "id": {
+        "label": "https://podcasts.apple.com/us/podcast/the-metallica-report/id1698768033?uo=2",
+        "attributes": {
+            "im:id": "1698768033"
+        }
+    },
+    "artist": {
+        "label": "Metallica"
+    },
+    "contentType": {
+        "attributes": {
+            "term": "Podcast",
+            "label": "Podcast"
+        }
+    },
+    "image": [
+        {
+            "label": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/55x55bb.png",
+            "attributes": {
+                "height": "55"
+            }
+        },
+        {
+            "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/60x60bb.png",
+            "attributes": {
+                "height": "60"
+            }
+        },
+        {
+            "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/170x170bb.png",
+            "attributes": {
+                "height": "170"
+            }
+        }
+    ],
+    "name": {
+        "label": "The Metallica Report"
+    },
+    "price": {
+        "label": "Get",
+        "attributes": {
+            "amount": "0",
+            "currency": "USD"
+        }
+    },
+    "releaseDate": {
+        "label": "2023-08-02T00:00:00-07:00",
+        "attributes": {
+            "label": "August 2, 2023"
+        }
+    },
+    "link": {
+        "label": "Metallica"
+    },
+    "rights": {
+        "label": "© 2023 Metallica, Inc."
+    },
+    "summary": {
+        "label": "Keep up with all things Metallica by going straight to the source. Now you can get your news directly from those entrenched in the band’s own Northern California headquarters. This weekly report is hosted by Steffan Chirazi and Renée Richardson, two members of the Metallica Camp.\n\nSteffan is a long-time rock scribe and editor of the band’s online mag, So What!, whose days covering Metallica began in the 1980s with the British music magazines Sounds and Kerrang! Renée is the Director of Philanthropy for the band’s foundation, All Within My Hands, and also has a storied background in music as a well-known Bay Area radio personality.\n\nEach week will sound a little different, but you’ll always remain in the loop. Steffan and Renée will keep you posted with the latest news and updates from Metallica HQ and the road as the M72 Tour makes its way around the world. They’ll bring you mini-features for a little peek behind the curtain, and you’ll learn bits of info you won’t find anywhere else through chats with everyone from members of the road crew to poster artists, from fans to band members themselves! \n\nThey won’t just tell you what you need to know; they’ll also get to the bottom of what you want to find out! Listeners can submit questions, and Steffan and Renée will get to work finding answers.\n\nYou’ll enjoy all of this and more with The Metallica Report, your quick, weekly fix covering our most relevant topics of the day.\n\nProduced by Pantheon Media & PopCult\n\nExecutive Producers: Marc Reiter, Vickie Strate, Doug Oswandel\n\nProduction Coordinator: Lane Watson "
+    },
+    "title": {
+        "label": "The Metallica Report - Metallica"
+    }
+}

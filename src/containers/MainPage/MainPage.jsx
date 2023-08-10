@@ -38,7 +38,7 @@ const MainPage = ({ initGetAllDataPodcast }) => {
     <>
       <SearchBarWithCounter items={filteredItems} handleOnChange={handleInputChange} filter={filter} />
       <>
-        <div className="grid md:grid-cols-4 gap-4 container mx-auto">
+        <div className="grid md:grid-cols-4 gap-4 container mx-auto" data-testid="listElements">
           {filteredItems?.map((podcast) => {
             return (
               <CardPodcast key={podcast?.id.attributes?.id} podcast={podcast} ></CardPodcast>

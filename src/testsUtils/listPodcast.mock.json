@@ -1,0 +1,312 @@
+[
+    {
+        "category": {
+            "attributes": {
+                "im:id": "1523",
+                "term": "Music Commentary",
+                "scheme": "https://podcasts.apple.com/us/genre/podcasts-music-music-commentary/id1523?uo=2",
+                "label": "Music Commentary"
+            }
+        },
+        "id": {
+            "label": "https://podcasts.apple.com/us/podcast/the-metallica-report/id1698768033?uo=2",
+            "attributes": {
+                "im:id": "1698768033"
+            }
+        },
+        "artist": {
+            "label": "Metallica"
+        },
+        "contentType": {
+            "attributes": {
+                "term": "Podcast",
+                "label": "Podcast"
+            }
+        },
+        "image": [
+            {
+                "label": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/55x55bb.png",
+                "attributes": {
+                    "height": "55"
+                }
+            },
+            {
+                "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/60x60bb.png",
+                "attributes": {
+                    "height": "60"
+                }
+            },
+            {
+                "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/170x170bb.png",
+                "attributes": {
+                    "height": "170"
+                }
+            }
+        ],
+        "name": {
+            "label": "The Metallica Report"
+        },
+        "price": {
+            "label": "Get",
+            "attributes": {
+                "amount": "0",
+                "currency": "USD"
+            }
+        },
+        "releaseDate": {
+            "label": "2023-08-02T00:00:00-07:00",
+            "attributes": {
+                "label": "August 2, 2023"
+            }
+        },
+        "link": {
+            "label": "Metallica"
+        },
+        "rights": {
+            "label": "© 2023 Metallica, Inc."
+        },
+        "summary": {
+            "label": "Keep up with all things Metallica by going straight to the source. Now you can get your news directly from those entrenched in the band’s own Northern California headquarters. This weekly report is hosted by Steffan Chirazi and Renée Richardson, two members of the Metallica Camp.\n\nSteffan is a long-time rock scribe and editor of the band’s online mag, So What!, whose days covering Metallica began in the 1980s with the British music magazines Sounds and Kerrang! Renée is the Director of Philanthropy for the band’s foundation, All Within My Hands, and also has a storied background in music as a well-known Bay Area radio personality.\n\nEach week will sound a little different, but you’ll always remain in the loop. Steffan and Renée will keep you posted with the latest news and updates from Metallica HQ and the road as the M72 Tour makes its way around the world. They’ll bring you mini-features for a little peek behind the curtain, and you’ll learn bits of info you won’t find anywhere else through chats with everyone from members of the road crew to poster artists, from fans to band members themselves! \n\nThey won’t just tell you what you need to know; they’ll also get to the bottom of what you want to find out! Listeners can submit questions, and Steffan and Renée will get to work finding answers.\n\nYou’ll enjoy all of this and more with The Metallica Report, your quick, weekly fix covering our most relevant topics of the day.\n\nProduced by Pantheon Media & PopCult\n\nExecutive Producers: Marc Reiter, Vickie Strate, Doug Oswandel\n\nProduction Coordinator: Lane Watson "
+        },
+        "title": {
+            "label": "The Metallica Report - Metallica"
+        }
+    },
+    {
+        "category": {
+            "attributes": {
+                "im:id": "1310",
+                "term": "Music",
+                "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+                "label": "Music"
+            }
+        },
+        "id": {
+            "label": "https://podcasts.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?uo=2",
+            "attributes": {
+                "im:id": "1535809341"
+            }
+        },
+        "artist": {
+            "label": "The Joe Budden Network",
+            "attributes": {
+                "href": "https://podcasts.apple.com/us/artist/the-joe-budden-network/1535844019?uo=2"
+            }
+        },
+        "contentType": {
+            "attributes": {
+                "term": "Podcast",
+                "label": "Podcast"
+            }
+        },
+        "image": [
+            {
+                "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/55x55bb.png",
+                "attributes": {
+                    "height": "55"
+                }
+            },
+            {
+                "label": "https://is5-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.png",
+                "attributes": {
+                    "height": "60"
+                }
+            },
+            {
+                "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/170x170bb.png",
+                "attributes": {
+                    "height": "170"
+                }
+            }
+        ],
+        "name": {
+            "label": "The Joe Budden Podcast"
+        },
+        "price": {
+            "label": "Get",
+            "attributes": {
+                "amount": "0",
+                "currency": "USD"
+            }
+        },
+        "releaseDate": {
+            "label": "2023-08-02T00:00:00-07:00",
+            "attributes": {
+                "label": "August 2, 2023"
+            }
+        },
+        "link": {
+            "label": "The Joe Budden Network",
+            "attributes": {
+                "href": "https://podcasts.apple.com/us/artist/the-joe-budden-network/1535844019?uo=2"
+            }
+        },
+        "rights": {
+            "label": "© All rights reserved"
+        },
+        "summary": {
+            "label": "Tune into Joe Budden and his friends. Follow along the crazy adventures of these very random friends."
+        },
+        "title": {
+            "label": "The Joe Budden Podcast - The Joe Budden Network"
+        }
+    },
+    {
+        "category": {
+            "attributes": {
+                "im:id": "1310",
+                "term": "Music",
+                "scheme": "https://podcasts.apple.com/us/genre/podcasts-music/id1310?uo=2",
+                "label": "Music"
+            }
+        },
+        "id": {
+            "label": "https://podcasts.apple.com/us/podcast/drink-champs/id1096830182?uo=2",
+            "attributes": {
+                "im:id": "1096830182"
+            }
+        },
+        "artist": {
+            "label": "Interval Presents",
+            "attributes": {
+                "href": "https://podcasts.apple.com/us/artist/iheartradio/284341002?uo=2"
+            }
+        },
+        "contentType": {
+            "attributes": {
+                "term": "Podcast",
+                "label": "Podcast"
+            }
+        },
+        "image": [
+            {
+                "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/1f/ad/c7/1fadc7d4-1e22-beaa-720a-2e2988dc1521/mza_16091018887573148747.jpg/55x55bb.png",
+                "attributes": {
+                    "height": "55"
+                }
+            },
+            {
+                "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts126/v4/1f/ad/c7/1fadc7d4-1e22-beaa-720a-2e2988dc1521/mza_16091018887573148747.jpg/60x60bb.png",
+                "attributes": {
+                    "height": "60"
+                }
+            },
+            {
+                "label": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/1f/ad/c7/1fadc7d4-1e22-beaa-720a-2e2988dc1521/mza_16091018887573148747.jpg/170x170bb.png",
+                "attributes": {
+                    "height": "170"
+                }
+            }
+        ],
+        "name": {
+            "label": "Drink Champs"
+        },
+        "price": {
+            "label": "Get",
+            "attributes": {
+                "amount": "0",
+                "currency": "USD"
+            }
+        },
+        "releaseDate": {
+            "label": "2023-08-04T00:01:00-07:00",
+            "attributes": {
+                "label": "August 4, 2023"
+            }
+        },
+        "link": {
+            "label": "Interval Presents",
+            "attributes": {
+                "href": "https://podcasts.apple.com/us/artist/iheartradio/284341002?uo=2"
+            }
+        },
+        "rights": {
+            "label": "© 2023 Interval Presents"
+        },
+        "summary": {
+            "label": "Legendary Queens rapper-turned show host N.O.R.E. teams up with Miami hip-hop pioneer DJ EFN for a night of boozy conversation and boisterous storytelling. The hosts and guests engage together in fun, light-hearted conversation - looking back at their paths to success, highlighting their lives, friendships, and iconic moments within their career. In this unfiltered series, drinks are flowing and jokes are rolling - take a seat at the table with N.O.R.E & EFN. You Gotta Relax!"
+        },
+        "title": {
+            "label": "Drink Champs - Interval Presents"
+        }
+    },
+    {
+        "category": {
+            "attributes": {
+                "im:id": "1523",
+                "term": "Music Commentary",
+                "scheme": "https://podcasts.apple.com/us/genre/podcasts-music-music-commentary/id1523?uo=2",
+                "label": "Music Commentary"
+            }
+        },
+        "id": {
+            "label": "https://podcasts.apple.com/us/podcast/million-dollaz-worth-of-game/id1460157002?uo=2",
+            "attributes": {
+                "im:id": "1460157002"
+            }
+        },
+        "artist": {
+            "label": "Barstool Sports",
+            "attributes": {
+                "href": "https://podcasts.apple.com/us/artist/barstool-sports/1524874689?uo=2"
+            }
+        },
+        "contentType": {
+            "attributes": {
+                "term": "Podcast",
+                "label": "Podcast"
+            }
+        },
+        "image": [
+            {
+                "label": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/7b/cf/f6/7bcff6bb-5f99-6c2f-c6c5-3a9799f3df21/mza_8544742664200824246.jpg/55x55bb.png",
+                "attributes": {
+                    "height": "55"
+                }
+            },
+            {
+                "label": "https://is3-ssl.mzstatic.com/image/thumb/Podcasts125/v4/7b/cf/f6/7bcff6bb-5f99-6c2f-c6c5-3a9799f3df21/mza_8544742664200824246.jpg/60x60bb.png",
+                "attributes": {
+                    "height": "60"
+                }
+            },
+            {
+                "label": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts125/v4/7b/cf/f6/7bcff6bb-5f99-6c2f-c6c5-3a9799f3df21/mza_8544742664200824246.jpg/170x170bb.png",
+                "attributes": {
+                    "height": "170"
+                }
+            }
+        ],
+        "name": {
+            "label": "Million Dollaz Worth Of Game"
+        },
+        "price": {
+            "label": "Get",
+            "attributes": {
+                "amount": "0",
+                "currency": "USD"
+            }
+        },
+        "releaseDate": {
+            "label": "2023-07-28T16:30:00-07:00",
+            "attributes": {
+                "label": "July 28, 2023"
+            }
+        },
+        "link": {
+            "label": "Barstool Sports",
+            "attributes": {
+                "href": "https://podcasts.apple.com/us/artist/barstool-sports/1524874689?uo=2"
+            }
+        },
+        "rights": {
+            "label": "© 2023 Barstool Sports, Inc."
+        },
+        "summary": {
+            "label": "The Million Dollaz Worth of Game show, a weekly podcast with rapper/actor @GillieDaKing and social media influencer and disruptor @Wallo267 - The perfect blend of discussing music, real life issues, personal experiences, honest advice and comedy\n\nYou can find every episode of this show on Apple Podcasts, Spotify or YouTube. Prime Members can listen ad-free on Amazon Music. For more, visit barstool.link/mworthofgame"
+        },
+        "title": {
+            "label": "Million Dollaz Worth Of Game - Barstool Sports"
+        }
+    }
+]

@@ -18,7 +18,7 @@ const PodcastDetails = ({ podcastDetails, idPodcast }) => {
     }
     return (
         <>
-            <div className={`w-1/4 bg-white rounded-lg shadow-md p-6 mr-8 `} >
+            <div className='w-1/4 bg-white rounded-lg shadow-md p-6 mr-8' data-testid="podcast-details">
                 <div onClick={handleOnClick} className={`${isClickable}`}>
                     <img src={podcastDetails?.image?.[2].label} alt="Product Image" className="p-6 w-full  rounded-lg" />
                     <div className='border-t-2 border-solid pt-2 pb-2'>

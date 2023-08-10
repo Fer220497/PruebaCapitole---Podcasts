@@ -1,0 +1,33 @@
+{
+    "country": "USA",
+    "episodeFileExtension": "mp3",
+    "artworkUrl600": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/600x600bb.jpg",
+    "artworkUrl160": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/160x160bb.jpg",
+    "episodeContentType": "audio",
+    "closedCaptioning": "none",
+    "collectionId": 1698768033,
+    "collectionName": "The Metallica Report",
+    "artistIds": [],
+    "trackTimeMillis": 862000,
+    "contentAdvisoryRating": "Explicit",
+    "artworkUrl60": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/7b/75/f4/7b75f4d2-1c87-335b-e6a0-206d3e0a892f/mza_7327315443161286710.jpeg/60x60bb.jpg",
+    "collectionViewUrl": "https://itunes.apple.com/us/podcast/the-metallica-report/id1698768033?mt=2&uo=4",
+    "trackViewUrl": "https://podcasts.apple.com/us/podcast/week-of-august-2-2023/id1698768033?i=1000623143982&uo=4",
+    "shortDescription": "This week’s episode kicks off with a message from Lars, followed by a glance back at the European leg of the M72 World Tour, a preview of what’s to come in North America starting this week in New Jersey, plus a few crazy facts about the massive prod",
+    "description": "Keep up with all things Metallica by going straight to the source. Welcome to The Metallica Report, THE official Metallica podcast! \nThis week’s episode kicks off with a message from Lars, followed by a glance back at the European leg of the M72 World Tour, a preview of what’s to come in North America starting this week in New Jersey, plus a few crazy facts about the massive production. You’ll also hear from Austin Manning, head of the Fifth Member Chapter New York Attitude, about what he’s most looking forward to on this tour and get the scoop on all the weekend activities planned for each city along the way.\nNew episodes are released weekly and will introduce you to all aspects of Metallica’s world. Whether you hear from the Metallica Family through fan features, the band’s crew at HQ or on the road, or from the guys themselves, you’re sure to get a unique perspective. You’ll also get to know your “people on the inside,” hosts Steffan Chirazi (long-time rock scribe and editor of the band’s online mag, So What!) and Renée Richardson (a well-known Bay Area radio personality who now oversees the band’s foundation, All Within My Hands). \nFollow, download, rate, review, and join Steff and Renée for The Metallica Report every week.\nSubmit questions or comments for our features Fuel, Road Warriors, or Family Matters: http://metallica.com/podcasts \nCheck out the M72 Tour Map: https://m72map.metallica.com \nNew Jersey Takeover Link: https://www.metallica.com/tour/2023-08-04-east-rutherford-new-jersey.html#metallica-takeover\nBastardane: https://www.bastardane.com \nOTTTO: https://www.otttoband.com",
+    "releaseDate": "2023-08-02T07:00:00Z",
+    "episodeUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/p.podderapp.com/1394819820/chrt.fm/track/E74G3E/traffic.megaphone.fm/PAN8739121026.mp3?updated=1691036273",
+    "feedUrl": "https://feeds.megaphone.fm/metallica",
+    "previewUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/p.podderapp.com/1394819820/chrt.fm/track/E74G3E/traffic.megaphone.fm/PAN8739121026.mp3?updated=1691036273",
+    "episodeGuid": "672e7920-2ff2-11ee-a18f-872e35d3bffa",
+    "trackId": 1000623143982,
+    "trackName": "Week of August 2, 2023",
+    "genres": [
+        {
+            "name": "Music Commentary",
+            "id": "1523"
+        }
+    ],
+    "kind": "podcast-episode",
+    "wrapperType": "podcastEpisode"
+}

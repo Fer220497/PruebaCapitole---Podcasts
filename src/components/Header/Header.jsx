@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <>
             <header className="bg-white w-min cursor-pointer p-2 ">
-                <div onClick={handleClickPodcast}>
+                <div onClick={handleClickPodcast} data-testid="header">
                     <p className='text-xl text-blue-500 hover:text-blue-700 cursor-pointer'>Podcaster</p>
                 </div>
             </header>

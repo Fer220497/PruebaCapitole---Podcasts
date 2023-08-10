@@ -10,14 +10,15 @@ const SearchBarWithCounter = ({ items, handleOnChange, filter }) => {
 
     return (
         <>
-            <div className='w-full flex justify-end'>
-                <div className='border-2 rounded-lg bg-blue-500 p-1 text-white text-2sm font-bold inline-block'>{items?.length}</div>
+            <div className='w-full flex justify-end' >
+                <div className='border-2 rounded-lg bg-blue-500 p-1 text-white text-2sm font-bold inline-block' data-testid="itemsCounter">{items?.length}</div>
                 <input
                     type="text"
                     value={filter}
                     onChange={handleOnChange}
                     placeholder="Filter podcasts..."
                     className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg'
+                    data-testid="searchBar"
                 />
             </div>
         </>

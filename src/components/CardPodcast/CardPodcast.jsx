@@ -10,14 +10,13 @@ import { useNavigate } from "react-router-dom";
 const CardPodcast = ({ podcast }) => {
     let navigate = useNavigate();
 
-    //place-self-center rounded overflow-hidden shadow-lg inline-block w-20 flex-none
     const handleClickPodcast = () => {
         const route = `/podcast/${podcast?.id?.attributes?.["im:id"]}`
         navigate(route);
     }
     return (
         <>
-            <div key={podcast?.id.attributes?.id} className="flex flex-col" onClick={handleClickPodcast}>
+            <div key={podcast?.id.attributes?.id} className="flex flex-col" onClick={handleClickPodcast} data-testid="CardPodcast">
                 <div className='flex justify-center items-center cursor-pointer'>
                     <img className="items-center rounded-full relative top-12" width={"120px"} src={podcast?.image[0].label} ></img>
                 </div>

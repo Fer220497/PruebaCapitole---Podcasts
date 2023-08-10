@@ -18,9 +18,8 @@ const EpisodeDetails = ({ initGetEpisodeDetails }) => {
 
     return (
         <>
-
             <div className=" bg-white rounded-lg shadow-md p-6 w-3/4">
-                <div className='border-t-2 border-solid pt-2 pb-2'>
+                <div className='border-t-2 border-solid pt-2 pb-2' data-testid="episode-description">
                     <p className="text-xl font-semibold">{episodeDetails?.trackName}</p>
                     <div className="whitespace-pre-line italic" >{episodeDetails?.description} </div>
                 </div>
